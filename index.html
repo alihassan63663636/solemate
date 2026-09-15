@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoleMate | Premium Shoes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><span>👟</span> SoleMate</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Shoes</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+            <button id="themeBtn" class="icon-btn" title="Toggle dark mode">🌙</button>
+            <button id="cartBtn" class="cart-btn">🛒 Cart <span id="cartCount">0</span></button>
+            <button id="menuBtn" class="menu-btn">☰</button>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="small-title">STEP INTO STYLE</p>
+            <h1>Find Your<br><span>Perfect Pair.</span></h1>
+            <p class="hero-text">Discover stylish, comfortable and affordable shoes designed for every step of your journey.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="primary-btn">Shop Now →</a>
+                <a href="#about" class="secondary-btn">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-shoe">
+            <div class="shoe-circle"></div>
+            <div class="shoe-emoji">👟</div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature"><div class="feature-icon">🚚</div><div><h3>Free Delivery</h3><p>On orders over $50</p></div></div>
+        <div class="feature"><div class="feature-icon">🔄</div><div><h3>Easy Returns</h3><p>30-day return policy</p></div></div>
+        <div class="feature"><div class="feature-icon">🔒</div><div><h3>Secure Shopping</h3><p>Your information is safe</p></div></div>
+        <div class="feature"><div class="feature-icon">⭐</div><div><h3>Top Quality</h3><p>Products you can trust</p></div></div>
+    </section>
+
+    <section id="products" class="products-section">
+        <div class="section-heading">
+            <div><p class="small-title">OUR COLLECTION</p><h2>Popular Shoes</h2></div>
+            <div class="search-box">🔎 <input type="text" id="searchInput" placeholder="Search shoes..."></div>
+        </div>
+
+        <div class="categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="running">Running</button>
+            <button class="category-btn" data-category="casual">Casual</button>
+            <button class="category-btn" data-category="sports">Sports</button>
+            <button class="category-btn" data-category="formal">Formal</button>
+        </div>
+
+        <div id="productGrid" class="product-grid">
+            <div class="product-card" data-category="running" data-name="Air Runner">
+                <div class="product-image"><span class="badge">NEW</span><button class="favorite">♡</button><div class="shoe-placeholder">👟</div></div>
+                <div class="product-info"><p class="product-category">Running</p><h3>Air Runner</h3><p class="description">Lightweight running shoes for everyday training.</p><div class="product-bottom"><strong>$79.99</strong><button class="add-btn" data-name="Air Runner" data-price="79.99">+ Add</button></div></div>
+            </div>
+
+            <div class="product-card" data-category="casual" data-name="Street Classic">
+                <div class="product-image"><span class="badge sale">SALE</span><button class="favorite">♡</button><div class="shoe-placeholder">👞</div></div>
+                <div class="product-info"><p class="product-category">Casual</p><h3>Street Classic</h3><p class="description">A classic design made for comfortable everyday wear.</p><div class="product-bottom"><strong>$59.99</strong><button class="add-btn" data-name="Street Classic" data-price="59.99">+ Add</button></div></div>
+            </div>
+
+            <div class="product-card" data-category="sports" data-name="Pro Sport">
+                <div class="product-image"><button class="favorite">♡</button><div class="shoe-placeholder">👟</div></div>
+                <div class="product-info"><p class="product-category">Sports</p><h3>Pro Sport</h3><p class="description">High-performance shoes built for active lifestyles.</p><div class="product-bottom"><strong>$89.99</strong><button class="add-btn" data-name="Pro Sport" data-price="89.99">+ Add</button></div></div>
+            </div>
+
+            <div class="product-card" data-category="formal" data-name="Executive Leather">
+                <div class="product-image"><button class="favorite">♡</button><div class="shoe-placeholder">👞</div></div>
+                <div class="product-info"><p class="product-category">Formal</p><h3>Executive Leather</h3><p class="description">Elegant formal shoes perfect for special occasions.</p><div class="product-bottom"><strong>$99.99</strong><button class="add-btn" data-name="Executive Leather" data-price="99.99">+ Add</button></div></div>
+            </div>
+
+            <div class="product-card" data-category="running" data-name="Speed Max">
+                <div class="product-image"><span class="badge">HOT</span><button class="favorite">♡</button><div class="shoe-placeholder">👟</div></div>
+                <div class="product-info"><p class="product-category">Running</p><h3>Speed Max</h3><p class="description">Responsive running shoes designed for speed.</p><div class="product-bottom"><strong>$94.99</strong><button class="add-btn" data-name="Speed Max" data-price="94.99">+ Add</button></div></div>
+            </div>
+
+            <div class="product-card" data-category="casual" data-name="Urban Walk">
+                <div class="product-image"><button class="favorite">♡</button><div class="shoe-placeholder">👟</div></div>
+                <div class="product-info"><p class="product-category">Casual</p><h3>Urban Walk</h3><p class="description">Modern casual sneakers made for city adventures.</p><div class="product-bottom"><strong>$69.99</strong><button class="add-btn" data-name="Urban Walk" data-price="69.99">+ Add</button></div></div>
+            </div>
+        </div>
+        <p id="noProducts" class="no-products">No shoes found.</p>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-image">👟</div>
+        <div class="about-content">
+            <p class="small-title">ABOUT SOLEMATE</p>
+            <h2>We believe every step matters.</h2>
+            <p>SoleMate is a fictional shoe store created as a high-school web development project. Our goal is to demonstrate how HTML, CSS and JavaScript can work together to create a modern and interactive website.</p>
+            <p>From running shoes to formal footwear, our collection offers something for everyone.</p>
+            <a href="#products" class="primary-btn">Explore Collection →</a>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div><p class="small-title">STAY UPDATED</p><h2>Get the latest shoe drops.</h2></div>
+        <form id="newsletterForm"><input type="email" id="emailInput" placeholder="Enter your email" required><button type="submit">Subscribe</button></form>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-content"><p class="small-title">CONTACT US</p><h2>Have a question?</h2><p>We'd love to hear from you. Send us a message and we'll get back to you.</p></div>
+        <form id="contactForm" class="contact-form"><input type="text" placeholder="Your Name" required><input type="email" placeholder="Your Email" required><textarea rows="5" placeholder="Your Message" required></textarea><button type="submit" class="primary-btn">Send Message</button></form>
+    </section>
+
+    <footer>
+        <div class="footer-logo">👟 SoleMate</div>
+        <p>© 2026 SoleMate. High School Web Project.</p>
+        <div class="socials"><span>Instagram</span><span>Facebook</span><span>Twitter</span></div>
+    </footer>
+
+    <div id="overlay" class="overlay"></div>
+    <aside id="cartSidebar" class="cart-sidebar">
+        <div class="cart-header"><h2>Your Cart</h2><button id="closeCart">✕</button></div>
+        <div id="cartItems" class="cart-items"><p class="empty-cart">Your cart is empty.</p></div>
+        <div class="cart-footer"><div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div><button id="checkoutBtn" class="checkout-btn">Checkout</button></div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
